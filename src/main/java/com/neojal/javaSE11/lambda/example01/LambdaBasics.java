@@ -1,6 +1,4 @@
-package lambda.example01;
-
-import lambda.example02.MyFunction;
+package com.neojal.javaSE11.lambda.example01;
 
 import java.util.Comparator;
 
@@ -28,10 +26,6 @@ public class LambdaBasics {
         Comparator<String> stringComparatorLambdaSimple =
                 (s1, s2) -> s1.compareTo(s2);
         System.out.println( stringComparatorLambdaSimple.compare("hello","world") );
-
-
-        MyFunction myFunction = () -> System.out.println("Hello world!");
-        myFunction.apply();
 
     }
 }
