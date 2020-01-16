@@ -12,5 +12,6 @@ java SE 11 exercises
 * https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html  
 
 ### Stream API
+* https://www.geeksforgeeks.org/streamapi-in-java/  
 * http://tutorials.jenkov.com/java-functional-programming/streams.html
 * https://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html
