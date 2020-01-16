@@ -1,6 +1,11 @@
 # javaSE11
 java SE 11 exercises
 
+## TODO
+
+* Optional type (java8?).
+* Functional programming.
+
 ## POM
 
 * [junit-5-vs-junit-4](https://howtodoinjava.com/junit5/junit-5-vs-junit-4/)
