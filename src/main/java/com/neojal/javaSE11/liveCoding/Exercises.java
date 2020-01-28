@@ -127,4 +127,16 @@ public class Exercises {
 
         return -1;
     }
+
+    public String convertStringToSomeIP(String s) {
+        String ip=null;
+
+        /* determine the length of the possible octets
+        1111        = 1.1.1.1       l/4=1, l%4=0
+        11111       = 1.1.1.11      l/4=1, l%4=1
+        111111      = 1.1.1.111 - 1.1.11.11     l/4=1, l%4=2
+        */
+
+        return ip;
+    }
 }

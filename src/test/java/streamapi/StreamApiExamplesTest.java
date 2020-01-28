@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class StreamApiExamplesTest {
 
+    static final String filterName = "Manuel";
     static final List<String> names = Arrays.asList("Jose", "Dulce", "Angie", "Manuel", "Maru");
     static final List<String> repeatedNames =
             Arrays.asList("Jose", "Dulce", "Angie", "Manuel", "Maru", "Dulce", "Jose");
@@ -41,6 +42,13 @@ public class StreamApiExamplesTest {
     }
 
     @Test
+    void filterName() {
+
+        assertNotEquals(names, StreamApiExamples.filterName(names, filterName));
+        assertEquals(filterName, StreamApiExamples.findAny(names, filterName));
+    }
+
+    @Test
     void sumIntegers() {
         assertEquals(15, StreamApiExamples.sumIntegers(numbers));
     }
@@ -49,5 +57,10 @@ public class StreamApiExamplesTest {
     void factorial() {
         assertEquals(120, StreamApiExamples.factorial(5));
         assertEquals(3628800, StreamApiExamples.factorial(10));
+    }
+
+    @Test
+    void stringLengths() {
+        assertEquals( Arrays.asList(4,5,5,6,4), StreamApiExamples.getStringsLengthsList(names));
     }
 }

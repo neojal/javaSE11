@@ -54,4 +54,12 @@ public class ExercisesTest {
         assertEquals(5, exercises.binarySearch(ints, 6));
         assertEquals(9, exercises.binarySearch(ints, 10));
     }
+
+    @Test
+    void stringToSomeIP() {
+
+        Exercises exercises = new Exercises();
+
+        assertEquals( "1.1.1.1", exercises.convertStringToSomeIP("1111") );
+    }
 }
